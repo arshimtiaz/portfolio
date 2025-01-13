@@ -1,0 +1,379 @@
+baseURL = "https://arshimtiaz.github.io"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Arsh Imtiaz"
+theme = "LoveIt"
+timeZone = "Europe/London"
+enableGitInfo = true
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[params]
+  version = "0.2.X"
+  description = "The personal site for Arsh Imtiaz"
+  keywords = ["Arsh", "Imtiaz", "Arsh Imtiaz", "cyber security", "Ethical Hacking", "CV"]
+  defaultTheme = "dark"
+  fingerprint = ""
+  dateFormat = "2006-01-02"
+
+  [params.app]
+    title = "Arsh Imtiaz"
+    noFavicon = true
+    svgFavicon = ""
+    # Android browser
+    themeColor = "#ffffff"
+    # Safari
+    iconColor = "#5bbad5"
+    # Windows tile color
+    tileColor = "#da532c"
+
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      # URL of the LOGO
+      logo = ""
+      name = "Arsh Imtiaz"
+      pre = ""
+      post = ""
+      typeit = false
+
+  [params.footer]
+    enable = true
+    custom = ''
+    hugo = false
+    copyright = true
+    author = true
+    since = 2023
+    icp = ""
+    license = ''
+
+  [params.section]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.list]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      avatarURL = "/img/me.jpeg"
+      avatarAlt = "Arsh Imtiaz"
+      title = "Arsh Imtiaz"
+      subtitle = "Cyber Security and Ethical Hacking Student"
+      disclaimer = "Some content on this website teaches hacking, in the trust that you will use it ethically and ensure that you follow all local and relevant laws."
+      typeit = true
+      social = true
+
+    [params.home.posts]
+      enable = false
+
+  [params.social]
+    GitHub = "arshimtiaz"
+    Linkedin = "arsh-jamadar"
+    # Email = "contact"
+    RSS = false
+    StackOverflow = "17151917/c0ncatenate"
+    HackerNews = "c0ncatenate"
+    Steam = "76561198324297253"
+
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = false
+    ruby = false
+    fraction = false
+    fontawesome = true
+    linkToMarkdown = false
+    rssFullText = false
+
+    [params.page.toc]
+      enable = true
+      keepStatic = true
+      auto = true
+
+    [params.page.math]
+      enable = false
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      copyTex = false
+      mhchem = false
+      
+    [params.page.code]
+      copy = false
+      maxShownLines = 10
+
+    [params.page.mapbox]
+      accessToken = ""
+      lightStyle = "mapbox://styles/mapbox/light-v9"
+      darkStyle = "mapbox://styles/mapbox/dark-v9"
+      navigation = false
+      geolocate = false
+      scale = false
+      fullscreen = false
+
+    [params.page.share]
+      enable = false
+
+    [params.page.comment]
+      enable = false
+      # Disqus comment config
+      [params.page.comment.disqus]
+        # 
+        enable = false
+        # Disqus shortname to use Disqus in posts
+        shortname = ""
+      # Gitalk comment config
+      [params.page.comment.gitalk]
+        # 
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+      # Valine comment config
+      [params.page.comment.valine]
+        enable = false
+        appId = ""
+        appKey = ""
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
+        #  emoji data file name, default is "google.yml"
+        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+        # located in "themes/LoveIt/assets/data/emoji/" directory
+        # you can store your own data files in the same path under your project:
+        # "assets/data/emoji/"
+        emoji = ""
+      # Facebook comment config
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        languageCode = ""
+      #  Telegram comments config
+      [params.page.comment.telegram]
+        enable = false
+        siteID = ""
+        limit = 5
+        height = ""
+        color = ""
+        colorful = true
+        dislikes = false
+        outlined = false
+      #  Commento comment config
+      [params.page.comment.commento]
+        enable = false
+      #  Utterances comment config
+      [params.page.comment.utterances]
+        enable = false
+        # owner/repo
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+    #  Third-party library config
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # located in "assets/"
+        # Or
+        # someCSS = "https://cdn.example.com/some.css"
+      [params.page.library.js]
+        # someJavascript = "some.js"
+        # located in "assets/"
+        # Or
+        # someJavascript = "https://cdn.example.com/some.js"
+    #  Page SEO config
+    [params.page.seo]
+      # image URL
+      images = []
+      # Publisher info
+      [params.page.seo.publisher]
+        name = "Arsh Imtiaz"
+        logoUrl = "/images/avatar.png"
+
+  [params.typeit]
+    speed = 100
+    cursorSpeed = 1000
+    cursorChar = "|"
+    duration = -1
+    
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+
+  [params.seo]
+    # image URL
+    image = ""
+    # thumbnail URL
+    thumbnailUrl = ""
+
+  #  Analytics config
+  [params.analytics]
+    enable = false
+    # Google Analytics
+    [params.analytics.google]
+      id = ""
+      # whether to anonymize IP
+      anonymizeIP = true
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
+
+  #  Cookie consent config
+  [params.cookieconsent]
+    enable = false
+    
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+
+  #  CDN config for third-party library files
+  [params.cdn]
+    # CDN data file name, disabled by default
+    # ("jsdelivr.yml")
+    # located in "themes/LoveIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    data = ""
+
+  #  Compatibility config
+  [params.compatibility]
+    # whether to use Polyfill.io to be compatible with older browsers
+    polyfill = false
+    # whether to use object-fit-images to be compatible with older browsers
+    objectFit = false
+
+# Markup related config in Hugo
+[markup]
+  # Syntax Highlighting
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false is a necessary configuration
+    # (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# Author config
+[author]
+  name = "Arsh Imtiaz"
+  email = ""
+  link = "/about"
+
+# Sitemap config
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks config
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = "posts/:filename"
+
+# Privacy config
+[privacy]
+  #  privacy of the Google Analytics (replaced by params.analytics.google)
+  [privacy.googleAnalytics]
+    # ...
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+# Options to make output .md files
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# Options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+[outputs]
+  # 
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
