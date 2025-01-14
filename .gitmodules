@@ -1,0 +1,4 @@
+[submodule "arshimtiazportfolio/public"]
+	path = arshimtiazportfolio/public
+	url = https://github.com/arshimtiaz/arshimtiaz.github.io
+	branch = main
