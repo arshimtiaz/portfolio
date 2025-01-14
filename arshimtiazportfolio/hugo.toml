@@ -75,13 +75,13 @@ enableRobotsTXT = true
 
   [params.footer]
     enable = true
-    custom = ''
+    custom = ""
     hugo = false
     copyright = true
     author = true
     since = 2023
     icp = ""
-    license = ''
+    license = "All Rights Reserved"
 
   [params.section]
     paginate = 20
