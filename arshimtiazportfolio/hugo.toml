@@ -52,11 +52,12 @@ enableRobotsTXT = true
     enable = true
     type = "lunr"
     contentLength = 4000
-    placeholder = ""
+    placeholder = "Enter search term"
     maxResultLength = 10
     snippetLength = 30
     highlightTag = "em"
     absoluteURL = false
+    
     [params.search.algolia]
       index = ""
       appID = ""
@@ -100,7 +101,7 @@ enableRobotsTXT = true
       avatarURL = "/img/me.jpeg"
       avatarAlt = "Arsh Imtiaz"
       title = "Arsh Imtiaz"
-      subtitle = "Cyber Security and Ethical Hacking Student"
+      subtitle = "are you a one or a zero?"
       disclaimer = "Some content on this website teaches hacking, in the trust that you will use it ethically and ensure that you follow all local and relevant laws."
       typeit = true
       social = true
@@ -110,7 +111,7 @@ enableRobotsTXT = true
 
   [params.social]
     GitHub = "arshimtiaz"
-    Linkedin = "arsh-jamadar"
+    Linkedin = "arsh-imtiaz"
     # Email = "contact"
     RSS = false
     StackOverflow = "17151917/c0ncatenate"
@@ -130,7 +131,7 @@ enableRobotsTXT = true
 
     [params.page.toc]
       enable = true
-      keepStatic = true
+      keepStatic = false
       auto = true
 
     [params.page.math]
@@ -143,8 +144,8 @@ enableRobotsTXT = true
       mhchem = false
       
     [params.page.code]
-      copy = false
-      maxShownLines = 10
+      copy = true
+      maxShownLines = 50
 
     [params.page.mapbox]
       accessToken = ""
@@ -281,10 +282,11 @@ enableRobotsTXT = true
   #  Cookie consent config
   [params.cookieconsent]
     enable = false
+    theme = "classic"
     
     [params.cookieconsent.content]
-      message = ""
-      dismiss = ""
+      message = "This site uses cookies to keep things running smoothly. No personal data collected."
+      dismiss = "That's fine"
       link = ""
 
   #  CDN config for third-party library files

@@ -1,30 +1,23 @@
 ---
 title: "About Me"
-description: "Learn more about Arsh Imtiaz, a passionate Cyber Security and Ethical Hacking student."
+description: "Learn more about Arsh Imtiaz, a passionate Cyber Security and Ethical Hacking professional."
 ---
 
 # About Me  
 
-Hi, I’m **Arsh Imtiaz**—a final-year **BSc Cyber Security and Ethical Hacking** student with a passion for safeguarding the digital world. My expertise lies in **penetration testing**, **social engineering**, and **network security**, and I’m actively seeking graduate opportunities in the cyber security industry.  
+Hi, I’m **Arsh Imtiaz**—a **Cyber Security and Ethical Hacking professional**. I’m passionate about safeguarding digital assets and continuously honing my skills in penetration testing, social engineering, network security, and digital forensics.
 
-## Academic Background  
+## Professional Background  
 
-Throughout my degree, I’ve excelled in various modules, consistently achieving first-class honors. Below is a list of modules I’ve completed:  
+I hold a **First Class Honours BSc degree in Cyber Security and Ethical Hacking**. This strong academic foundation, combined with practical experience, has equipped me to tackle complex cybersecurity challenges across areas such as:
 
-- **Computer Architecture and Networks**  
-- **Computer Systems and Networking (CISCO)**  
-- **Digital Forensics Fundamentals**  
-- **Ethical Hacking**  
-- **Intermediate Digital Forensics**  
-- **Introduction to Algorithms**  
-- **Introduction to Computing**  
-- **Introduction to Computer Security**  
-- **Operating Systems, Security and Networks**  
-- **Real-World Project**  
-- **Secure Programming and Exploit Development**  
-- **Technology and its Social, Legal, and Ethical Context**  
+- **Penetration Testing**  
+- **Social Engineering**  
+- **Network Security**  
+- **Digital Forensics**  
+- **Secure Programming and Exploit Development**
 
-For more details on my academic journey and work experience, feel free to visit my [LinkedIn profile](https://www.linkedin.com/in/arsh-jamadar/) or [contact me](/contact).
+For more about my professional journey, feel free to visit my [LinkedIn profile](https://www.linkedin.com/in/arsh-jamadar/) or [contact me](/contact).
 
 ---
 
@@ -32,7 +25,7 @@ For more details on my academic journey and work experience, feel free to visit 
 
 ### TryHackMe  
 
-I am an active learner on **TryHackMe**, a renowned platform for ethical hacking and cybersecurity training. Having attained the **highest level (Level 13)** and ranking within the **Top 1% of users globally**, I continuously demonstrate my commitment to mastering practical cybersecurity techniques and staying ahead in this dynamic field.    
+I am an active learner on **TryHackMe**, a renowned platform for ethical hacking and cybersecurity training. Having attained the **highest level** and ranking within the **Top 1% of users globally**, I continuously demonstrate my commitment to mastering practical cybersecurity techniques and staying ahead in this dynamic field.    
 
 <div align="center">
   <script src="https://tryhackme.com/badge/203421"></script>
@@ -50,9 +43,9 @@ For a detailed overview of my qualifications and experiences, you can download m
 
 ## Beyond Academics  
 
-Outside of academics and work, I enjoy exploring new technologies, honing my pentesting skills, and contributing to open-source projects. I’m also passionate about **Linux customization** (I’m an Arch Linux enthusiast!) and creating innovative tools for red teaming.  
+Outside of formal education and work, I enjoy exploring new technologies, refining my pentesting skills, and contributing to open-source projects. I’m also passionate about **Linux customization** (I’m an Arch Linux enthusiast!) and creating innovative tools for red teaming.  
 
-Feel free to explore my blog where I document my journey, share tips, and discuss my learnings in cyber security and beyond.
+Feel free to explore my blog where I document my journey, share tips, and discuss my learnings in cybersecurity and beyond.
 
 ---
 
