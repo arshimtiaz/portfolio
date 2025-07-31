@@ -7,6 +7,11 @@ timeZone = "Europe/London"
 enableGitInfo = true
 enableRobotsTXT = true
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+
 [menu]
   [[menu.main]]
     identifier = "home"
@@ -28,6 +33,11 @@ enableRobotsTXT = true
     name = "Contact"
     url = "/contact/"
     weight = 4
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 5
 
 [params]
   version = "0.2.X"
@@ -112,16 +122,17 @@ enableRobotsTXT = true
   [params.social]
     GitHub = "arshimtiaz"
     Linkedin = "arsh-imtiaz"
-    # Email = "contact"
+    Email = "arshjamadar47@gmail.com"
     RSS = false
     StackOverflow = "17151917/c0ncatenate"
     HackerNews = "c0ncatenate"
     Steam = "76561198324297253"
 
+
   [params.page]
     hiddenFromHomePage = false
     hiddenFromSearch = false
-    twemoji = false
+    twemoji = true
     lightgallery = false
     ruby = false
     fraction = false
@@ -135,7 +146,7 @@ enableRobotsTXT = true
       auto = true
 
     [params.page.math]
-      enable = false
+      enable = true
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
       inlineLeftDelimiter = ""
@@ -160,11 +171,11 @@ enableRobotsTXT = true
       enable = false
 
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus comment config
       [params.page.comment.disqus]
         # 
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
         shortname = ""
       # Gitalk comment config
