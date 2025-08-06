@@ -108,10 +108,10 @@ enableRobotsTXT = true
     rss = 10
     [params.home.profile]
       enable = true
-      avatarURL = "/img/me.png"
+      avatarURL = "/img/me.jpeg"
       avatarAlt = "Arsh Imtiaz"
       title = "Arsh Imtiaz"
-      subtitle = "Loading..."
+      subtitle = "are you a one or a zero?"
       disclaimer = "Some content on this website teaches hacking, in the trust that you will use it ethically and ensure that you follow all local and relevant laws."
       typeit = true
       social = true
