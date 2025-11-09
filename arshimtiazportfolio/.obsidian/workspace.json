@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "6c4d4f0bccb6dcee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/virtual-vehicle-lab/Building a Virtual Vehicle Pentest Lab on My Laptop.md",
+                "file": "content/posts/virtual-vehicle-lab/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Building a Virtual Vehicle Pentest Lab on My Laptop"
+              "title": "index"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "fd8cf9408f2c583f",
@@ -171,14 +170,26 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "6c4d4f0bccb6dcee",
   "lastOpenFiles": [
+    "content/posts/networking-fundamentals/index.md",
+    "content/posts/virtual-vehicle-lab/index.md",
+    "public/posts/virtual-vehicle-lab/assets/car_hacking.png",
+    "public/posts/virtual-vehicle-lab/assets",
+    "content/posts/virtual-vehicle-lab/assets",
     "content/posts/wazuh-setup/index.md",
-    "content/posts/virtual-vehicle-lab/Building a Virtual Vehicle Pentest Lab on My Laptop.md",
+    "content/posts/virtual-vehicle-lab/assets/car_hacking.png",
+    "content/posts/www.vector.com.md",
+    "public/posts/www.vector.com/index.html",
+    "public/posts/www.vector.com",
+    "public/posts/virtual-vehicle-lab/index.html",
+    "public/posts/virtual-vehicle-lab",
+    "content/posts/wifi-hacking/index.md",
+    "public/posts/building-a-virtual-vehicle-pentest-lab-on-my-laptop/index.html",
+    "public/posts/building-a-virtual-vehicle-pentest-lab-on-my-laptop",
     "content/posts/virtual-vehicle-lab",
     "Untitled",
     "www.blackarch.org/download.md",
-    "www.blackarch.org",
     "Personal Notes/Video_Ideas.md",
     "Personal Notes/uni_sources.md",
     "Personal Notes/General_Ideas.md",
@@ -187,14 +198,7 @@
     "Papers/EV Plug&Play/Plan.md",
     "Personal Notes/INSTRUCTIONS.md",
     "Papers/Untitled.md",
-    "Papers/EV Plug&Play",
-    "Papers/assets/angles.tex",
     "Papers/assets/angles.png",
-    "Papers/assets/angles.pdf",
-    "Papers/assets/angles.log",
-    "Papers/assets/angles.aux",
-    "Papers/assets",
-    "Papers/angles.png",
-    "Papers/angles.pdf"
+    "Papers/angles.png"
   ]
 }

@@ -1,7 +1,24 @@
-# **When Red Teaming Meets Car Hacking: Building a Virtual Vehicle Pentest Lab on My Laptop**
+---
+title: "When Red Teaming Meets Car Hacking: Building a Virtual Vehicle Pentest Lab on My Laptop"
+date: 2025-11-09
+desc: How I created my own in-house car hacking lab
+author: Arsh Imtiaz
+tags:
+  - wifi
+  - Homelab
+  - cybersecurity
+  - pentesting
+  - networking
+---
+
+<div style="text-align: center;">
+  <img src="assets/car_hacking.png" alt="Networking is fun" width="100%">
+  <small>How does one emulate cars at home?</small>
+</div>
+
 
 Every car hacking tool I have come across required expensive ECUs, adapters or even full test benches. Having worked with test cars before, I got an insight into how time consuming and expensive, if not difficult it is to set a working HIL (Hardware-In-Loop) setup.
-I didn't want to wait for hardware to understand how CAN networks behave - I wanted to simulate it.
+I didn't want to wait for hardware to understand how automotive networks behave - I wanted to simulate it.
 
 So, I built my own virtual car hacking network using Linux tools, a bit of Python, and some creative problem solving.
 
@@ -9,20 +26,22 @@ So, I built my own virtual car hacking network using Linux tools, a bit of Pytho
 ## Background
 Automotive Cybersecurity is fascinating. Being extremely niche, it isn't the first thing that comes to mind when someone thinks of *cybersecurity*. They imagine computers, massive server farms and a network that connects them all. But what is a modern car, if not a network of highly powerful computers, on wheels.
 
-Working at a prestigious automotive company like McLaren had me dealing with security at the intersection of software and hardware - but I wanted to explore the same logic on my own terms. 
+Working with cars as a pentester has had me dealing with security at the intersection of software and hardware - but I wanted to explore the same logic on my own terms. 
 
 A vehicle's network is split into three specific interfaces:
 1. **CAN** (Controller Area Network) - the most widely used 
-2. **LIN** (Local Interconnect Network) - runner up
-3. **Automotive Ethernet** (100BASE-T1, 1000BASE-T1, etc.) - enhanced security with higher speeds
+2. **LIN** (Local Interconnect Network) - for low-speed/low-cost devices
+3. **Automotive Ethernet** (100BASE-T1, 1000BASE-T1, etc.) - higher bandwidth, growing adoption
 
-These interfaces help in transmitting data to and from ECUs. Apart from ECUs, you can also use them to transmit and receive data from sensors and other devices. Setting these up requires compatible hardware and software. This includes purchasing an expensive license with the already expensive hardware which is designed to simulate and control such networks. (Yes [Vector](www.vector.com), I'm talking about you). No matter how useful these tools are, they're practically impossible to acquire when you're by yourself and not backed by a corporation. We need to follow a different route.
+Infotainment Systems, Sensors, ECUs, they all talk over these buses. Setting these up requires a lot of specialized hardware and software. This includes purchasing an expensive license with the already expensive hardware which is designed to simulate and control such networks. (Yes [*Vector*](https://www.vector.com), I'm talking about you). These tools are brilliant, but they're practically out of reach when you're hacking solo and not backed by a corporation.
+
+So: emulate it.
 
 ---
 ## The Idea
 If network penetration testers can simulate servers and routers, why can't car hackers simulate ECUs? After all, ECUs are basically computers that run a *specific* piece of software or a *specific* operating system on them, designed to only perform *specific* tasks.
 
-In a world where we have virtual machines helping us run multiple computers on one, I started brainstorming if it were possible to create ECUs digitally, without all the fancy expensive hardware. What would you possibly need? GPS? Wi-Fi? Bluetooth? A platform to run apps and scripts? A logger? All of this already exists on a standard laptop. The only thing that stood out to me was the communication interfaces. CAN is not used anywhere apart from automotive networks. Neither is LIN or 100Base-T1 (*Automotive* Ethernet for a reason). This made me research even more. What could possibly help me **simulate** CAN?
+In a world where we have virtual machines helping us run multiple computers on one, I started brainstorming if it was possible to create ECUs digitally, without all the fancy expensive hardware. What would you possibly need? GPS? Wi-Fi? Bluetooth? A platform to run apps and scripts? A logger? All of this already exists on a standard laptop. The only thing that stood out to me was the communication interfaces. CAN is not used anywhere apart from automotive networks. Neither is LIN or 100Base-T1 (*Automotive* Ethernet for a reason). This made me research even more. What could possibly help me **simulate** CAN?
 
 > "If there's a will, there is a way."
 > ~ some wise person
@@ -30,10 +49,7 @@ In a world where we have virtual machines helping us run multiple computers on o
 ---
 ## The Build
 
-Having spent not very long researching, I came across [SocketCAN](https://docs.kernel.org/networking/can.html).
-
-### SocketCAN
-Think CAN, but now it runs pretty much anywhere. Yep, that's SocketCAN. It allows us to create virtual CAN interfaces on Linux, or connect to physical CAN networks present on an actual car. Works on any flavour: Arch Linux (for us elites), Debian (for you normies), and Fedora (for you outcasts).
+After a bit of research, I came across [SocketCAN](https://docs.kernel.org/networking/can.html). It's a Linux kernel subsystem that exposes CAN interfaces like any other network device. Think CAN, but now it runs pretty much anywhere.  It allows us to create virtual CAN interfaces on Linux, or connect to physical CAN networks present on an actual car.
 
 It doesn't have anything to do with what flavour you choose as it is built into the kernel. It is only a matter flipping the switch and enabling it:
 
@@ -68,6 +84,8 @@ vcan0: flags=193<UP,RUNNING,NOARP>  mtu 72
 
 And voila! You now have a virtual CAN interface, ready to read and transmit CAN frames.
 
+---
+
 ### Sending packets
 What's the point of creating an interface if you're not going to use it?
 To send packets on this interface, we have a set of can tools that you can install on pretty much any Linux machine as well. 
@@ -93,6 +111,7 @@ This will give you access to these tools:
 2. cansend
 3. canplayer
 4. cansniffer
+
 ...and more.
 
 To send packets on the virtual bus (vcan0), use this command:
@@ -101,14 +120,16 @@ To send packets on the virtual bus (vcan0), use this command:
 cansend vcan0 123#AABBCCDDEEFF
 ```
 
-If it doesn't output anything, congratulations! You've sent your first CAN frame using Linux! But... how do we know that it got send? 
+If it doesn't output anything, congratulations! You've sent your first CAN frame using Linux! 
+
+But... how do we know that it got sent? 
 We can use `candump`, which continuously listens for any CAN messages being transmitted on the bus you specify to it as an argument.
 
 ```
 candump vcan0
 ```
 
-While this is running, send the example CAN frame from another terminal again. This time, you'll see it pop up on the listener as a properly formatted CAN frame:
+While this is running, send the example CAN frame with `cansend` from another terminal again. This time, you'll see it pop up on the listener as a properly formatted CAN frame:
 
 ```sh
 vcan0  123   [6]  AA BB CC DD EE FF
@@ -118,8 +139,7 @@ Brilliant. You've now mastered the art of sending CAN frames on a bus using Linu
 
 What makes this fun is you can also build your own custom logger and transmitter using Python, with the [python-can](https://python-can.readthedocs.io/en/stable/) library. It can both send and listen for CAN frames on any CAN interface. 
 
-<details>
-	<summary> Here's one if you want to check it out</summary>
+Here's one if you want to try it out:
 ```python
 #!/usr/bin/env python3
 import can
@@ -157,12 +177,11 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
-</details>
+This simple program lets you prototype virtual ECUs that send/receive frames — perfect for building test scenarios.
 
 ---
-### Reflection
+## Reflection
 My reflection on this piece of work includes this:
 1. If I create ECUs built on either C or C++, using the same logic that a standard ECU would, I could have it generate CAN frames for specific functions and accept CAN frames to perform specific functions. This completely virtualizes the test bench and makes it portable.
 2. The presence of Python (python-can) allows us to craft custom CAN packets, which opens doors to creating a **fuzzer** that mutates CAN frames randomly.
@@ -176,8 +195,9 @@ Hacking isn't about fancy gear. It's about creativity. By virtualizing this chal
 If you are into automotive cybersecurity but don't know where to start, start by simulating - the best labs are the ones you build yourself.
 
 ---
-### What's Next?
-I might try and create an instrument cluster/infotainment system next and connect it to my virtual network to simulate a more complete in-vehicle setup.
-Will keep you posted!
+## What's Next?
+1. Create an instrument cluster/infotainment system next and connect it to my virtual network to simulate a more complete in-vehicle setup.
+2. Setup UDS (Unified Diagnostics Services) request/response handling in a virtual ECU
 
+---
 Thanks for reading — I’ll keep posting updates as I build the next pieces (infotainment mock, UDS handlers, and a tiny fuzzer). If you want the example scripts or a reproducible repo structure, tell me and I’ll publish them on GitHub.
