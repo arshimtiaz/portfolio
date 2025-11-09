@@ -3,7 +3,7 @@
   "interfaceFontFamily": "Inter",
   "textFontFamily": "Rubik",
   "monospaceFontFamily": "SpaceMono Nerd Font Mono",
-  "baseFontSize": 23,
+  "baseFontSize": 20,
   "baseFontSizeAction": true,
   "theme": "moonstone",
   "accentColor": "#488ca3",
