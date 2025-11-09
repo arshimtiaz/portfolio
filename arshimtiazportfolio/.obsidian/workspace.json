@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/virtual-vehicle-lab/Building a Virtual Vehicle Pentest Lab on My Laptop.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Building a Virtual Vehicle Pentest Lab on My Laptop"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "79822f5fba72a947",
+    "type": "split",
+    "children": [
+      {
+        "id": "944402e3eadb16bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87139ab40aa6af17",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2e968ab26d5fa999",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "11b8f9d82e53d50f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "fd8cf9408f2c583f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0d2b782fb56a7da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35a1c14666d44900",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Papers/No AI.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for No AI"
+            }
+          },
+          {
+            "id": "a3da808cee91bc3b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b8d783cfda1ab279",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "149f1316b0236299",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false,
+      "obsidian42-brat:BRAT": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "content/posts/wazuh-setup/index.md",
+    "content/posts/virtual-vehicle-lab/Building a Virtual Vehicle Pentest Lab on My Laptop.md",
+    "content/posts/virtual-vehicle-lab",
+    "Untitled",
+    "www.blackarch.org/download.md",
+    "www.blackarch.org",
+    "Personal Notes/Video_Ideas.md",
+    "Personal Notes/uni_sources.md",
+    "Personal Notes/General_Ideas.md",
+    "Personal Notes/dissertation_ideas.md",
+    "Papers/No AI.md",
+    "Papers/EV Plug&Play/Plan.md",
+    "Personal Notes/INSTRUCTIONS.md",
+    "Papers/Untitled.md",
+    "Papers/EV Plug&Play",
+    "Papers/assets/angles.tex",
+    "Papers/assets/angles.png",
+    "Papers/assets/angles.pdf",
+    "Papers/assets/angles.log",
+    "Papers/assets/angles.aux",
+    "Papers/assets",
+    "Papers/angles.png",
+    "Papers/angles.pdf"
+  ]
+}
