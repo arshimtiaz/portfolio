@@ -117,7 +117,7 @@ enableRobotsTXT = true
       social = true
 
     [params.home.posts]
-      enable = false
+      enable = true
 
   [params.social]
     GitHub = "c0ncatenate"
