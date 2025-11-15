@@ -96,6 +96,17 @@
         {{- partial "single/footer.html" . -}}
 
         {{- /* Comment */ -}}
-        {{- partial "comment.html" . -}}
+        {{- /* Utterances comments */ -}}
+        <section id="comments">
+            <h2>Comments</h2>
+            <script src="https://utteranc.es/client.js"
+                    repo="arshimtiaz/arshimtiaz.github.io"
+                    issue-term="pathname"
+                    label="blog-comments"
+                    theme="dark-blue"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+        </section>
     </article>
 {{- end -}}
