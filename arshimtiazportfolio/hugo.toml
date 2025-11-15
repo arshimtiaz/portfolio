@@ -124,7 +124,7 @@ enableRobotsTXT = true
     Linkedin = "arsh-imtiaz"
     Email = "arshjamadar47@gmail.com"
     Discord = "612688307163496448"
-    RSS = false
+    RSS = true
     StackOverflow = "17151917/c0ncatenate"
     HackerNews = "c0ncatenate"
     Steam = "76561198324297253"
@@ -139,7 +139,7 @@ enableRobotsTXT = true
     fraction = false
     fontawesome = true
     linkToMarkdown = false
-    rssFullText = false
+    rssFullText = true
 
     [params.page.toc]
       enable = true
@@ -176,7 +176,7 @@ enableRobotsTXT = true
       # Disqus comment config
       [params.page.comment.disqus]
         # 
-        enable = true
+        enable = false
         # Disqus shortname to use Disqus in posts
         shortname = ""
       # Gitalk comment config
@@ -189,10 +189,11 @@ enableRobotsTXT = true
         clientSecret = ""
       # Valine comment config
       [params.page.comment.valine]
+        #
         enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
+        appId = "CaOoOxztM3vWcn675hxtXEz4-MdYXbMMI"
+        appKey = "MKZNYmDoEIaqi68hC4To93x2"
+        placeholder = "Leave a comment..."
         avatar = "mp"
         meta= ""
         pageSize = 10
@@ -230,11 +231,11 @@ enableRobotsTXT = true
         enable = false
       #  Utterances comment config
       [params.page.comment.utterances]
-        enable = false
+        enable = true
         # owner/repo
-        repo = ""
+        repo = "arshimtiaz/arshimtiaz.github.io"
         issueTerm = "pathname"
-        label = ""
+        label = "Comments"
         lightTheme = "github-light"
         darkTheme = "github-dark"
     #  Third-party library config
@@ -361,14 +362,14 @@ enableRobotsTXT = true
 # Permalinks config
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = "posts/:filename"
+  posts = "posts/:contentbasename"
 
 # Privacy config
 [privacy]
   #  privacy of the Google Analytics (replaced by params.analytics.google)
   [privacy.googleAnalytics]
     # ...
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true

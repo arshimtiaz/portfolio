@@ -5,7 +5,7 @@
   "monospaceFontFamily": "SpaceMono Nerd Font Mono",
   "baseFontSize": 20,
   "baseFontSizeAction": true,
-  "theme": "moonstone",
+  "theme": "obsidian",
   "accentColor": "#488ca3",
   "nativeMenus": true
 }

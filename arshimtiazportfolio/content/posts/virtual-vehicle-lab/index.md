@@ -9,6 +9,7 @@ tags:
   - cybersecurity
   - pentesting
   - networking
+comment: true
 ---
 
 <div style="text-align: center;">

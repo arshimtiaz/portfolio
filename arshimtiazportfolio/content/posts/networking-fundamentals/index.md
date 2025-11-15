@@ -1,9 +1,12 @@
 ---
-title: "Why Networking Fundamentals Should Be Your First Step"
+title: Why Networking Fundamentals Should Be Your First Step
 date: 2025-08-06
-description: "My honest take on why you should nail the basics of networking before jumping into the flashy side of cybersecurity."
-author: "Arsh Imtiaz"
-tags: ["cybersecurity", "networking", "learning path"]
+description: My honest take on why you should nail the basics of networking before jumping into the flashy side of cybersecurity.
+author: Arsh Imtiaz
+tags:
+  - cybersecurity
+  - networking
+  - learning path
 ---
 
 <div style="text-align: center;">
