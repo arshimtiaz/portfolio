@@ -454,6 +454,7 @@
     "T1",
     "colour",
     "flavour",
+    "seclists",
     "vcan"
   ],
   "dialect": 0,
