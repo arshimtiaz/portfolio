@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/networking-fundamentals/index.md",
+                "file": "content/posts/my-first-ml-model/index.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "index.md"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "fd8cf9408f2c583f",
@@ -156,8 +155,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -185,24 +184,36 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/posts/my-first-ml-model/jupyter_password_ml.png",
+    "content/posts/my-first-ml-model/jupyter_password_ml.png",
+    "content/posts/my-first-ml-model/cat-soldier.gif",
+    "content/posts/wazuh-setup/index.md",
+    "content/posts/my-first-ml-model/index.md.md",
+    "public/posts/my-first-ml-model/cat-soldier.gif",
+    "content/posts/my-first-ml-model/training.png",
+    "public/posts/my-first-ml-model/training.png",
+    "public/posts/my-first-ml-model/train.png",
+    "public/posts/my-first-ml-model/Pasted image 20251119005835.png",
+    "content/posts/my-first-ml-model/extract_features.png",
+    "public/posts/my-first-ml-model/extract_features.png",
+    "public/posts/my-first-ml-model/Pasted image 20251119005628.png",
+    "public/posts/my-first-ml-model",
+    "public/tags/passwords/index.xml",
+    "public/tags/passwords/page/1/index.html",
+    "public/tags/passwords/page/1",
+    "public/tags/passwords/page",
+    "public/tags/passwords/index.html",
+    "public/tags/passwords",
+    "public/tags/machine-learning/index.xml",
+    "public/tags/beginner-project/index.xml",
+    "public/tags/machine-learning/page/1/index.html",
+    "public/posts/index.md",
+    "content/posts/Untitled.md",
+    "content/posts/networking-fundamentals/index.md",
     "content/posts/virtual-vehicle-lab/index.md",
     "content/contact.md",
-    "content/posts/networking-fundamentals/index.md",
-    "public/posts/virtual-vehicle-lab/assets/car_hacking.png",
-    "public/posts/virtual-vehicle-lab/assets",
-    "content/posts/virtual-vehicle-lab/assets",
-    "content/posts/wazuh-setup/index.md",
-    "content/posts/virtual-vehicle-lab/assets/car_hacking.png",
     "content/posts/www.vector.com.md",
-    "public/posts/www.vector.com/index.html",
-    "public/posts/www.vector.com",
-    "public/posts/virtual-vehicle-lab/index.html",
-    "public/posts/virtual-vehicle-lab",
     "content/posts/wifi-hacking/index.md",
-    "public/posts/building-a-virtual-vehicle-pentest-lab-on-my-laptop/index.html",
-    "public/posts/building-a-virtual-vehicle-pentest-lab-on-my-laptop",
-    "content/posts/virtual-vehicle-lab",
-    "Untitled",
     "www.blackarch.org/download.md",
     "Personal Notes/Video_Ideas.md",
     "Personal Notes/uni_sources.md",
@@ -211,8 +222,6 @@
     "Papers/No AI.md",
     "Papers/EV Plug&Play/Plan.md",
     "Personal Notes/INSTRUCTIONS.md",
-    "Papers/Untitled.md",
-    "Papers/assets/angles.png",
-    "Papers/angles.png"
+    "Papers/Untitled.md"
   ]
 }

@@ -2,8 +2,9 @@
   "showLineNumber": true,
   "spellcheck": true,
   "vimMode": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "content/posts",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
 }
