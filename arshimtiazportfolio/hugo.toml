@@ -266,7 +266,7 @@ enableRobotsTXT = true
     duration = -1
     
   [params.verification]
-    google = ""
+    google = "JGuYqAexfc-Pturlq5D1akWNXsKU9EyOOOY8x4etQS8"
     bing = ""
     yandex = ""
     pinterest = ""
