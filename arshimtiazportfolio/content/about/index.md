@@ -37,7 +37,7 @@ I am an active learner on **TryHackMe**, a renowned platform for ethical hacking
 
 For a detailed overview of my qualifications and experiences, you can download my **CV** using the link below:  
 
-[Download My CV](https://raw.github.com/arshimtiaz/arshimtiaz.github.io/main/content/about/Arsh_CV_2026.pdf)
+[Download My CV](https://raw.github.com/arshimtiaz/arshimtiaz.github.io/main/about/Arsh_CV_2026.pdf)
 
 ---
 
