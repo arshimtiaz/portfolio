@@ -367,7 +367,7 @@ enableRobotsTXT = true
 # Permalinks config
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = "posts/:contentbasename"
+  posts = "posts/:slug"
 
 # Privacy config
 [privacy]
