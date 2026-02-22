@@ -50,7 +50,7 @@ enableRobotsTXT = true
   keywords = ["Arsh", "Imtiaz", "Arsh Imtiaz", "cyber security", "Ethical Hacking", "CV"]
   defaultTheme = "dark"
   fingerprint = ""
-  dateFormat = "02/01/2006"
+  dateFormat = "02-01-2006"
 
   [params.app]
     title = "Arsh Imtiaz"
@@ -101,12 +101,12 @@ enableRobotsTXT = true
 
   [params.section]
     paginate = 20
-    dateFormat = "02/01"
+    dateFormat = "02-01"
     rss = 10
 
   [params.list]
     paginate = 20
-    dateFormat = "02/01"
+    dateFormat = "02-01"
     rss = 10
 
   [params.home]
