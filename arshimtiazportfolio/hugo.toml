@@ -34,10 +34,15 @@ enableRobotsTXT = true
     url = "/contact/"
     weight = 4
   [[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/research/"
+    weight = 5
+  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 5
+    weight = 6
 
 [params]
   version = "0.2.X"
