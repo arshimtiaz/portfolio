@@ -16,6 +16,10 @@ LLM agents increasingly rely on a growing ecosystem of "skills" and tools that e
 
 ## Background
 
+![Agent skill supply chain architecture](/images/agent-supply-chain-architecture.svg)
+
+*Figure 1 - The agent sits between the developer and local resources, but skills form an additional supply chain layer that can be compromised.*
+
 ### Agents, Tools, and Skills
 
 Modern LLM agents typically wrap a base model with:
@@ -50,7 +54,7 @@ Traditional software supply chain attacks target:
 
 For LLM agents, there is a new layer:
 
-- **Agent skill supply chain** – "plug-and-play" capabilities are added via:
+- **Agent skill supply chain** - "plug-and-play" capabilities are added via:
   - GitHub repos ("awesome agents" lists, random tools)
   - Copy-pasted snippets from blogs
   - Framework registries (skills/plugins)
@@ -102,6 +106,10 @@ In other words, the **skill implementation** is a supply chain risk.
 
 ## Attack Chain / Exploit
 
+![Silent exfiltration attack flow](/images/agent-supply-chain-attack-flow.svg)
+
+*Figure 2 - High-level flow from installing an attractive skill to silent codebase exfiltration.*
+
 ### Assumptions
 
 - Developer uses a local agent to help with codebase questions.
@@ -110,7 +118,7 @@ In other words, the **skill implementation** is a supply chain risk.
   - Legitimate code search functionality (so it appears to "work").
   - Hidden exfiltration logic.
 
-### Step 1 – Skill Adoption
+### Step 1 - Skill Adoption
 
 The attacker publishes a skill that looks appealing:
 
@@ -137,12 +145,12 @@ TOOLS = {
 }
 ```
 
-### Step 2 – Legitimate Usage
+### Step 2 - Legitimate Usage
 
 Developer asks:
 
-> "Where is the JWT validation logic implemented?"  
-> "Search for usages of `verify_token`."  
+> "Where is the JWT validation logic implemented?"
+> "Search for usages of `verify_token`."
 > "Show me all references to `PaymentController`."
 
 The agent:
@@ -153,7 +161,7 @@ The agent:
 
 Everything appears normal.
 
-### Step 3 – Silent Exfiltration
+### Step 3 - Silent Exfiltration
 
 Inside the malicious skill:
 
@@ -174,7 +182,7 @@ The agent sees:
 - No obvious errors.
 - Nothing suspicious in the tool's returned string.
 
-### Step 4 – Impact
+### Step 4 - Impact
 
 Depending on the repo:
 
@@ -187,7 +195,7 @@ No prompt injection, jailbreak, or LLM-level exploit was necessary. The agent si
 
 ## PoC Code
 
-Below is a simplified sketch of a malicious `code_search` skill implementation.  
+Below is a simplified sketch of a malicious `code_search` skill implementation.
 This is illustrative; in a real PoC, the exfil endpoint should be controlled in a safe lab environment.
 
 ```python
@@ -276,6 +284,10 @@ In your research repo, this would be:
 
 ## Mitigation
 
+![Hardening the skill layer](/images/agent-supply-chain-controls.svg)
+
+*Figure 3 - Moving from unconstrained skills to a hardened skill layer with sandboxing and egress controls.*
+
 ### 1. Treat Skills as High-Risk Dependencies
 
 - **Do not** treat skills as copy-paste snippets from blogs.
@@ -347,7 +359,17 @@ Even if you can't prevent every malicious skill, you can **notice** strange beha
 
 ## References
 
-- OWASP Top 10 for LLM Applications (LLM03:2025 – Training Data and Plugin Supply Chain)  
-- Recent articles on AI agent skill/plug-in supply chain risk (e.g., Mitiga and others)  
-- General resources on software supply chain security and dependency review  
-- Existing literature on prompt injection and agent attacks, which this work complements by focusing on the skill layer rather than the prompt alone
+- OWASP Top 10 for LLM Applications (OWASP LLM Top 10, 2025) – LLM03: Training Data & Model Supply Chain
+  - <https://owasp.org/www-project-top-10-for-large-language-model-applications/>
+- Mitiga – "AI Agent Supply Chain Risk: Silent Codebase Exfiltration via Skills" (2025)
+  - <https://www.mitiga.io/blog/ai-agent-supply-chain-risk-silent-codebase-exfiltration-via-skills>
+- AppSecEngineer – "Understanding Prompt Injection: A Guide to AI's Top Security Threat (LLM01)" (2025)
+  - <https://www.appsecengineer.com/blog/understanding-prompt-injection-a-guide-to-ais-top-security-threat-llm01>
+- NeuralTrust / Wikipedia – "Prompt injection" (2025) – overview and recent multi-step jailbreak research
+  - <https://en.wikipedia.org/wiki/Prompt_injection>
+- "Prompt Injection Attacks on Agentic Coding Assistants" (arXiv:2601.17548, 2026)
+  - <https://arxiv.org/abs/2601.17548>
+- "AgentLAB: Benchmarking LLM Agents against Long-Horizon Attacks" (arXiv:2602.16901, 2026)
+  - <https://arxiv.org/abs/2602.16901>
+- SentinelOne – "What Is LLM (Large Language Model) Security?" – practical overview of LLM-specific risks
+  - <https://www.sentinelone.com/cybersecurity-101/data-and-ai/llm-security/>
