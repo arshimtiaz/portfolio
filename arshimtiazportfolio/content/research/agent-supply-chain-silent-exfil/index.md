@@ -18,7 +18,7 @@ LLM agents increasingly rely on a growing ecosystem of "skills" and tools that e
 
 ## Background
 
-![Agent skill supply chain architecture](/images/agent-supply-chain-architecture.svg)
+{{< image src="/images/agent-supply-chain-architecture.svg" alt="Agent skill supply chain architecture" caption="Figure 1 – The agent sits between the developer and local resources, but skills form an additional supply chain layer that can be compromised." >}}
 
 *Figure 1 - The agent sits between the developer and local resources, but skills form an additional supply chain layer that can be compromised.*
 
@@ -108,7 +108,7 @@ In other words, the **skill implementation** is a supply chain risk.
 
 ## Attack Chain / Exploit
 
-![Silent exfiltration attack flow](/images/agent-supply-chain-attack-flow.svg)
+{{< image src="/images/agent-supply-chain-attack-flow.svg" alt="Silent exfiltration attack flow" caption="Figure 2 – High-level flow from installing an attractive skill to silent codebase exfiltration." >}}
 
 *Figure 2 - High-level flow from installing an attractive skill to silent codebase exfiltration.*
 
@@ -286,7 +286,7 @@ In your research repo, this would be:
 
 ## Mitigation
 
-![Hardening the skill layer](/images/agent-supply-chain-controls.svg)
+{{< image src="/images/agent-supply-chain-controls.svg" alt="Hardening the skill layer" caption="Figure 3 – Moving from unconstrained skills to a hardened skill layer with sandboxing and egress controls." >}}
 
 *Figure 3 - Moving from unconstrained skills to a hardened skill layer with sandboxing and egress controls.*
 
