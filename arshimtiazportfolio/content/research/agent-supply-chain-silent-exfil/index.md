@@ -7,6 +7,7 @@ summary: "A proof-of-concept attack where a seemingly legitimate skill for 'code
 target: "Local LLM agent with filesystem and HTTP tools"
 cve: ""
 stack: ["Python", "Ollama/local LLM", "HTTP", "Unix filesystem"]
+toc: true
 draft: false
 ---
 
