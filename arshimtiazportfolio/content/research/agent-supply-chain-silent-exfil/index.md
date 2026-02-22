@@ -8,6 +8,7 @@ target: "Local LLM agent with filesystem and HTTP tools"
 cve: ""
 stack: ["Python", "Ollama/local LLM", "HTTP", "Unix filesystem"]
 toc: true
+lightgallery: true
 draft: false
 ---
 
